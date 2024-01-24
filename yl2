@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Sisesta ridade arv: " rows
+read -p "Sisesta sümbolite arv igas reas: " columns
+
+for ((i = 1; i <= rows; i++))
+do
+    echo -n "$i "
+    for ((j = 1; j <= columns; j++))
+    do
+        echo -n "* "
+    done
+    echo ""  # Liigu järgmisele reale pärast iga rea lõppu
+done
