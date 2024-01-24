@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Sisesta ridade arv: " rows
+
+for ((i = 1; i <= rows; i++))
+do
+    echo -n "$i. "
+    for ((j = 1; j <= i; j++))
+    do
+        echo -n "* "
+    done
+    echo ""  # Liigu järgmisele reale pärast iga rea lõppu
+done
